@@ -1,29 +1,29 @@
 {
-    "name": "maelsoucaze/french",
+    "name": "luatdolphin/vietnamese",
     "type": "flarum-extension",
-    "description": "French language pack for Flarum.",
+    "description": "Vietnamese language pack for Flarum.",
     "homepage": "https://github.com/maelsoucaze/flarum",
-    "keywords": ["french", "language", "locale", "localization", "translation"],
+    "keywords": ["Vietnamese", "language", "locale", "localization", "translation"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Maël Soucaze",
-            "email": "maelsoucaze@gmail.com",
-            "homepage": "http://www.maelsoucaze.com"
+            "name": "Luat Dolphin",
+            "email": "luatdolphin@gmail.com",
+            "homepage": "http://www.soystery.com"
         }
     ],
     "support": {
-        "issues": "https://github.com/maelsoucaze/flarum/issues",
-        "source": "https://github.com/maelsoucaze/flarum",
+        "issues": "https://github.com/luatdolphin/vietnamese/issues",
+        "source": "https://github.com/luatdolphin/vietnamese",
         "forum": "http://discuss.flarum.org/d/615-french-language-pack",
-        "wiki": "https://github.com/maelsoucaze/flarum/wiki"
+        "wiki": "https://github.com/luatdolphin/vietnamese/wiki"
     },
     "require": {
         "flarum/core": "^0.1.0-beta.4"
     },
     "extra": {
         "flarum-extension": {
-            "title": "French",
+            "title": "Vietnamese",
             "icon": {
                 "name": "language",
                 "backgroundColor": "#4d698e",
@@ -31,8 +31,8 @@
             }
         },
         "flarum-locale": {
-            "code": "fr",
-            "title": "Français"
+            "code": "vi",
+            "title": "Vietnamese"
         }
     }
 }
