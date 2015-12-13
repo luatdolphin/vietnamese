@@ -9,60 +9,67 @@ core:
 
     # These strings are used in the Appearance page.
     appearance:
-      colored_header_label: "En-tête coloré"
-      colors_heading: Couleurs
-      colors_text: "Sélectionnez deux couleurs pour styliser votre forum. La première couleur est utilisée pour les éléments mis en évidence et la seconde couleur est utilisée pour les éléments en arrière-plan."
-      custom_styles_heading: Personnaliser les styles
-      custom_styles_text: Personnalisez l’apparence de votre forum en ajoutant votre propre code LESS/CSS qui sera appliqué en priorité par rapport aux styles par défaut de Flarum.
-      dark_mode_label: Mode sombre
-      edit_css_button: Éditer le CSS personnalisé
-      enter_hex_message: Veuillez saisir un code de couleur hexadécimal.
-      submit_button: => core.ref.okay
+      colored_header_label: Màu thanh tiêu đề
+      colors_heading: Màu sắc
+      colors_text: "Chọn màu sắc cho forum của bạn. Cái đầu áp dụng cho highlight color, cái thứ hai sẽ áp dụng cho phần nền."
+      custom_styles_heading: Tuỳ chỉnh giao diện
+      custom_styles_text: Chỉnh sửa giao diện Forum của bạn bằng cách chèn mã Less/Css.
+      dark_mode_label: Chế độ màu tối
+      edit_css_button: Thay đổi CSS
+      enter_hex_message: Hãy nhập vào mã màu dạng hexadecimal.
+      submit_button: => core.ref.save_changes
 
     # These strings are used in the Basics page.
     basics:
       all_discussions_label: => core.ref.all_discussions
-      default_language_heading: Langue par défaut
-      forum_description_heading: Description du forum
-      forum_description_text: Affichez un résumé décrivant votre communauté. La description apparaîtra dans la balise Méta et s’affichera dans le résultat des moteurs de recherche.
-      forum_title_heading: Titre du forum
-      home_page_heading: Page d’accueil
-      home_page_text: "Sélectionnez la page que les utilisateurs verront lorsqu’ils visiteront votre forum pour la première fois. Si vous saisissez une valeur personnalisée, veuillez utiliser le chemin relatif à la racine du forum."
-      saved_message: Vos modifications ont été enregistrées.
-      submit_button: => core.ref.okay
-      welcome_banner_heading: Bandeau de bienvenue
-      welcome_banner_text: "Personnalisez le texte du bandeau qui est affiché sur la page de la liste de discussions. Il vous permet d’accueillir les invités de votre forum."
+      default_language_heading: Ngôn ngữ mặc định
+      forum_description_heading: Miêu tả Forum
+      forum_description_text: Nhập vào một câu ngắn để mô tả Forum của bạn. Nó sẽ xuất hiện trong thẻ meta và hiển thị trong máy tìm kiếm.
+      forum_title_heading: Tiêu đề 
+      home_page_heading: Trang chủ
+      home_page_text: "Chọn trang chủ cho forum. Nếu nhập vào một giá trị khác, sử dụng đường dẫn liên quan với thư mục gốc của forum."
+      saved_message: Thay đổi đã được lưu.
+      submit_button: => core.ref.save_changes
+      welcome_banner_heading: Biểu ngữ Chào mừng
+      welcome_banner_text: Tuỳ chỉnh văn bản hiển thị trong biểu ngữ ở trang chủ. Sử dụng để gửi lời chào tới thành viên ghé thăm  forum của bạn.
 
     # These strings are used in the Dashboard page.
     dashboard:
-      beta_warning_text: "Ce <strong>logiciel en bêta</strong> est disponible pour que vous nous aidiez à le tester et à l’améliorer. Il ne devrait pas être utilisé dans un environnement de production."
-      contributing_text: "Vous souhaitez contribuer et corriger des bogues ? Consultez <a>la documentation de contribution</a> (en anglais)."
-      extension_text: "Vous souhaitez développer des extensions ? Consultez <a>la documentation sur les extensions</a> (en anglais)."
-      features_text: "Vous souhaitez soumettre une idée ou une fonctionnalité ? Publiez une nouvelle discussion sur notre forum en utilisant <a>l’étiquette « Features »</a> (en anglais)."
-      support_text: "Vous souhaitez signaler un bogue ? Publiez une nouvelle discussion sur notre forum en utilisant <a>l’étiquette « Support »</a> (en anglais)."
-      troubleshooting_text: "Vous avez des difficultés ? Consultez <a>la documentation de dépannage</a> (en anglais)."
-      version_text: "Merci d’essayer Flarum ! Vous utilisez la version {version}."
+      beta_warning_text: "Đây là <strong>bản thử nghiệm</strong>."
+      contributing_text: "Bạn muốn tìm lỗi và đóng góp? Đọc <a>Hướng dẫn đóng góp</a>."
+      extension_text: "Bạn muốn viết tiện ích cho forum? Đọc <a>Hướng dẫn</a>."
+      features_text: "Bạn có bất kỳ ý tưởng nào cải thiện Forum? Liên hệ với chúng tôi theo <a>Thẻ tính năng</a>."
+      support_text: "Bạn phát hiện ra lỗi? Hãy báo về forum của chúng tôi, bên dưới <a>Thẻ Hỗ trợ</a>."
+      troubleshooting_text: "Bạn có thắc mắc? Theo dõi <a>Hướng dẫn xử lý sự cố</a>."
+      version_text: "Bạn đang dùng phiên bản {version}."
+      welcome_text: "Chào mừng tới SoyStery!"
+
+    # These translations are used in the Edit Custom CSS modal dialog.
+    edit_css:
+      customize_text: "Tuỳ chỉnh giao diện Forum của bạn bằng cách thêm mã LESS/CSS để làm <a>giao diện mặc định</a>."
+      submit_button: => core.ref.save_changes
+      title: Sửa mã CSS
 
     # These strings are used in the Edit Group modal dialog.
     edit_group:
-      color_label: Couleur
-      delete_button: Supprimer le groupe
-      delete_confirmation: "Êtes-vous sûr de vouloir supprimer ce groupe ? Les membres du groupe ne seront pas supprimés."
-      icon_label: Icône
-      icon_text: "Saisissez le nom d’une des icônes de <a>Font Awesome</a> <em>sans</em> le préfixe <code>fa-</code>."
-      name_label: Nom
-      plural_placeholder: Pluriel (tel que « modérateurs »)
-      singular_placeholder: Singulier (tel que « modérateur »)
-      submit_button: => core.ref.okay
-      title: Créer le groupe
+      color_label: Màu
+      delete_button: Xóa nhóm
+      delete_confirmation: "Bạn có chắc bạn muốn xoá nhóm? Thành viên trong nhóm sẽ không bị xoá."
+      icon_label: Biểu tượng
+      icon_text: "Nhập vào bất kỳ tên biểu tượng trong <a>FontAwesome</a>, <em>không bao gồm</em> tiền tố <code>fa-</code> ."
+      name_label: Tên
+      plural_placeholder: Nhiều (ví dụ. 3 cộng tác viên)
+      singular_placeholder: Ít (ví dụ. 1 cộng tác viên)
+      submit_button: => core.ref.save_changes
+      title: Tạo nhóm
 
     # These strings are used in the Extensions page.
     extensions:
-      add_button: Ajouter une extension
-      disable_button: Désactiver
-      enable_button: Activer
+      add_button: Thêm tiện ích
+      disable_button: Vô hiệu hoá
+      enable_button: Kích hoạt
       settings_button: => core.ref.settings
-      uninstall_button: Désinstaller
+      uninstall_button: Gỡ bỏ
 
     # This string is used in the session dropdown menu.
     header:
@@ -70,51 +77,55 @@ core:
 
     # This string is used in the modal dialog displayed when loading extensions.
     loading:
-      title: Veuillez patienter…
+      title: Đang thực hiện...
 
     # These strings are used in the navigation bar.
     nav:
-      appearance_button: Apparence
-      appearance_text: "Personnalisez les couleurs, les logos et d’autres aspects de votre forum."
-      basics_button: Essentiel
-      basics_text: "Réglez le titre, la langue et d’autres réglages essentiels de votre forum."
-      dashboard_button: Tableau de bord
-      dashboard_text: Tout votre forum d’un simple coup d’œil.
-      extensions_button: Extensions
-      extensions_text: Ajoutez des fonctionnalités supplémentaires à votre forum pour le personnaliser selon vos préférences.
-      permissions_button: Permissions
-      permissions_text: Configurez les actions autorisées.
+      appearance_button: Giao diện
+      appearance_text: "Tuỳ chỉnh màu , logo và các giá trị khác cho forum."
+      basics_button: Cơ bản
+      basics_text: "Thiết lập tiêu đề forum, ngôn ngữ và những cài đặt cơ bản khác."
+      dashboard_button: Bảng điều khiển
+      dashboard_text: Tổng quan về forum.
+      extensions_button: Tiện ích
+      extensions_text: Thêm tiện ích cho Forum của bạn.
+      permissions_button: Quyền hạn
+      permissions_text: Thiết lập quyền truy cập cho mọi người.
 
     # These strings are used in the Permissions page of the admin interface.
     permissions:
-      allow_renaming_label: Renommer ses discussions
-      allow_post_editing_label: Éditer ses messages
-      create_heading: Création
-      delete_discussions_forever_label: Supprimer définitivement les discussions
-      delete_discussions_label: Supprimer les discussions
-      delete_posts_forever_label: Supprimer définitivement les messages
-      edit_and_delete_posts_label: Éditer et supprimer les messages
-      global_heading: Général
-      moderate_heading: Modération
-      new_group_button: Nouveau groupe
-      participate_heading: Participation
-      read_heading: Consultation
-      rename_discussions_label: Renommer les discussions
-      reply_to_discussions_label: Répondre aux discussions
-      sign_up_label: S’inscrire
-      start_discussions_label: Démarrer des discussions
-      view_discussions_label: Voir les discussions
+      allow_renaming_label: Cho phép đổi tên
+      allow_post_editing_label: Cho phép sửa bài đăng
+      create_heading: Tạo
+      delete_discussions_forever_label: Xoá bài viết vĩnh viễn
+      delete_discussions_label: Xoá bài viết
+      delete_posts_forever_label: Xoá bài đăng vĩnh viễn
+      edit_and_delete_posts_label: Sửa và xoá bài đăng
+      global_heading: Tổng quát
+      moderate_heading: Cộng tác viên
+      new_group_button: Nhóm mới
+      participate_heading: Tham gia
+      read_heading: Đọc
+      rename_discussions_label: Đổi tên bài viết
+      reply_to_discussions_label: Phản hồi bài viết
+      sign_up_label: Đăng ký
+      start_discussions_label: Viết bài mới
+      view_discussions_label: Xem bài viết
 
     # These strings are used in the dropdown menus on the Permissions page.
     permissions_controls:
-      allow_indefinitely_button: Indéfiniment
-      allow_some_minutes_button: "Pendant {count} minute|Pendant {count} minutes"
-      allow_ten_minutes_button: Pendant 10 minutes
-      allow_until_reply_button: Jusqu’à la prochaine réponse
-      everyone_button: Tout le monde
+      allow_indefinitely_button: Không giới hạn
+      allow_some_minutes_button: "Khoảng {count} phút|Khoảng {count} phút"
+      allow_ten_minutes_button: Khoảng 10 phút
+      allow_until_reply_button: Khi có bình luận trong lần kế tiếp
+      everyone_button: Mọi người
       members_button: => core.group.members
-      signup_closed_button: Refuser
-      signup_open_button: Autoriser
+      signup_closed_button: Không cho phép
+      signup_open_button: Cho phép
+
+    # These translations are used in the Settings modal dialog.
+    settings:
+      submit_button: => core.ref.save_changes
 
   # Strings in this namespace are used by the forum user interface.
   forum:
@@ -123,130 +134,136 @@ core:
     change_email:
       confirmation_message: => core.ref.confirmation_email_sent
       dismiss_button: => core.ref.okay
-      submit_button: => core.ref.okay
+      submit_button: => core.ref.save_changes
       title: => core.ref.change_email
 
     # These strings are used in the Change Password modal dialog.
     change_password:
-      send_button: Courriel de réinitialisation
-      text: "Cliquez sur le bouton ci-dessous et consultez le courriel que vous allez recevoir pour modifier votre mot de passe."
+      send_button: Gửi Email thay đổi mật khẩu
+      text: Nhấp vào nút bên dưới và kiểm tra email của bạn để nhận đường dẫn thay đổi mật khẩu của bạn.
       title: => core.ref.change_password
 
     # These strings are used by the composer controls.
     composer:
-      close_tooltip: Fermer
-      exit_full_screen_tooltip: Quitter le mode plein écran
-      full_screen_tooltip: Plein écran
-      minimize_tooltip: Réduire
+      close_tooltip: Thoát
+      exit_full_screen_tooltip: Thu hẹp
+      full_screen_tooltip: Mở rộng
+      minimize_tooltip: Ẩn
 
     # These strings are used by the composer when starting a discussion.
     composer_discussion:
-      body_placeholder: Rédigez un message…
-      discard_confirmation: "Vous n’avez pas publié votre discussion. Souhaitez-vous l’abandonner ?"
-      submit_button: Publier la discussion
+      body_placeholder: Viết một bài đăng...
+      discard_confirmation: "You have not posted your discussion. Do you wish to discard it?"
+      submit_button: Đăng bài viết
       title: => core.ref.start_a_discussion
-      title_placeholder: Titre de la discussion
+      title_placeholder: Tiêu đề bài viết
 
     # These strings are used by the composer when editing a post.
     composer_edit:
-      discard_confirmation: "Vous n’avez pas enregistré vos modifications. Souhaitez-vous les abandonner ?"
-      post_link: "Message #{number} de {discussion}"
-      submit_button: => core.ref.okay
+      discard_confirmation: "Bạn chưa lưu thay đổi. Bạn có muốn huỷ bỏ những thay đổi?"
+      post_link: "Bài viết #{number} trong {discussion}"
+      submit_button: => core.ref.save_changes
 
     # These strings are used by the composer when replying to a discussion.
     composer_reply:
       body_placeholder: => core.ref.write_a_reply
-      discard_confirmation: "Vous n’avez pas publié votre réponse. Souhaitez-vous l’abandonner ?"
-      posted_message: Votre réponse a été publiée.
-      submit_button: Publier la réponse
-      view_button: Consulter
+      discard_confirmation: "Bạn chưa đăng bình luận. Bạn có muốn huỷ bỏ bình luận này?"
+      posted_message: Bình luận của bạn đã được đăng.
+      submit_button: Đăng bình luận
+      view_button: Xem
+
+    # These translations are used in the Confirm Password modal dialog.
+    confirm_password:
+      password_placeholder: => core.ref.password
+      submit_button: => core.ref.confirm_password
+      title: => core.ref.confirm_password
 
     # These strings are used by the discussion control buttons.
     discussion_controls:
-      cannot_reply_button: Impossible de répondre
-      cannot_reply_text: Vous ne pouvez pas répondre à cette discussion.
+      cannot_reply_button: Không thể bình luận
+      cannot_reply_text: Bạn không có quyền bình luận bài viết này.
       delete_button: => core.ref.delete
-      delete_confirmation: "Êtes-vous sûr de vouloir supprimer cette discussion ?"
+      delete_confirmation: "Bạn có chắc bạn muốn xoá bài viết này?"
       delete_forever_button: => core.ref.delete_forever
-      log_in_to_reply_button: Se connecter pour répondre
-      rename_button: Renommer
-      rename_text: "Saisissez le nouveau titre de cette discussion :"
+      log_in_to_reply_button: Đăng nhập để bình luận
+      rename_button: Đổi tên
+      rename_text: "Nhập vào tiêu đề mới cho bài viết này:"
       reply_button: => core.ref.reply
       restore_button: => core.ref.restore
 
     # These strings are used in the discussion list.
     discussion_list:
-      empty_text: "Il n’y a aucune discussion ici. Souhaitez-vous en publier une ?"
+      empty_text: “Dường như không có bài viết nào ở đây. Tại sao bạn không tạo một bài mới?"
       load_more_button: => core.ref.load_more
-      mark_as_read_tooltip: Marquer comme lu
-      replied_text: "{username} a répondu à ça {ago}"
-      started_text: "{username} a publié ça {ago}"
+      mark_as_read_tooltip: Đánh dấu đã đọc
+      replied_text: "{username} đã phản hồi {ago}"
+      started_text: "{username} đã tạo {ago}"
 
     # These strings are used in the Edit User modal dialog (admin function).
     edit_user:
       email_label: => core.ref.email
       password_label: => core.ref.password
-      submit_button: => core.ref.okay
+      submit_button: => core.ref.save_changes
       username_label: => core.ref.username
 
     # These strings are used in the Forgot Password modal dialog.
     forgot_password:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
-      email_sent_message: "Nous vous avons envoyé un courriel contenant un lien pour réinitialiser votre mot de passe. Si vous ne le recevez pas prochainement, veuillez vérifier le contenu de votre dossier contenant les pourriels."
-      submit_button: Récupérer un mot de passe
-      text: Saisissez votre adresse de courriel pour que nous vous envoyons un lien qui vous permettra de réinitialiser votre mot de passe.
-      title: Mot de passe oublié
+      email_sent_message: Chúng tôi đã gửi cho bạn một email thay đổi mật khẩu của bạn. Kiểm tra mục thư rác nếu bạn không tìm thấy.
+      submit_button: Khôi phục mật khẩu
+      text: Nhập vào địa chỉ Email của bạn và chúng tôi sẽ gửi đường dẫn thay đổi mật khẩu của bạn.
+      title: Quên mật khẩu
 
     # These strings are used in the header and session dropdown menu.
     header:
-      admin_button: Administration
+      admin_button: Quản trị viên
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
-      profile_button: Profil
-      search_placeholder: Rechercher dans le forum
+      profile_button: Hồ sơ
+      search_placeholder: Tìm kiếm trong forum
       settings_button: => core.ref.settings
       sign_up_link: => core.ref.sign_up
 
     # These strings are used on the index page, peripheral to the discussion list.
     index:
       all_discussions_link: => core.ref.all_discussions
-      cannot_start_discussion_button: Impossible de démarrer une discussion
+      cannot_start_discussion_button: Không thể tạo bài viết
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
-      refresh_tooltip: Actualiser
-      start_discussion_button: => core.ref.start_a_discussion
+      refresh_tooltip: Tải lại trang
+      start_discussion_button: Tạo bài viết mới
 
     # These strings are used by the sorting control above the discussion list.
     index_sort:
-      latest_button: Activité
-      newest_button: Nouveauté
-      oldest_button: Ancienneté
-      relevance_button: Pertinence
-      top_button: Popularité
+      latest_button: Mới
+      newest_button: Mới nhất
+      oldest_button: Cũ
+      relevance_button: Có liên quan
+      top_button: Hàng đầu
 
     # These strings are used in the Log In modal dialog.
     log_in:
-      confirmation_required_message: "Vous devez confirmer votre adresse de courriel avant de pouvoir vous connecter. Nous avons envoyé un courriel de confirmation à {email}. Si vous ne le recevez pas prochainement, veuillez vérifier le contenu de votre dossier contenant les pourriels."
-      forgot_password_link: "Mot de passe oublié ?"
-      invalid_login_message: Vos identifiants sont incorrects.
+      confirmation_required_message: "Bạn cần xác nhận địa chỉ Email trước khi đăng nhập. Chúng tôi đã gửi Email xác nhận tới địa chỉ {email}. Nếu không thấy hãy kiểm tra mục thư rác."
+      forgot_password_link: "Bạn quên mật khẩu?"
+      invalid_login_message: Thông tin đăng nhập của bạn không chính xác.
       password_placeholder: => core.ref.password
-      sign_up_text: "Pas encore inscrit ? <a>Inscription</a>"
+      sign_up_text: "Bạn chưa có tài khoản? <a>Đăng ký</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
-      username_or_email_placeholder: Nom d’utilisateur ou adresse de courriel
+      username_or_email_placeholder: Tên đăng nhập hoặc Email
 
     # These strings are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
-      discussion_renamed_text: "{username} a renommé le titre de votre discussion"
-      empty_text: Aucune notification
+      discussion_renamed_text: "{username} đã thay đổi tiêu đề"
+      empty_text: Không có thông báo
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       title: => core.ref.notifications
       tooltip: => core.ref.notifications
 
     # These strings are used by tooltips displayed for individual posts.
     post:
-      edited_tooltip: "{username} a édité ça {ago}"
-      number_tooltip: "Message #{number}"
+      edited_tooltip: "{username} đã chỉnh sửa {ago}"
+      number_tooltip: "Bài viết #{number}"
 
     # These strings are used by the post control buttons.
     post_controls:
@@ -257,35 +274,35 @@ core:
 
     # These strings are used in the scrubber to the right of the post stream.
     post_scrubber:
-      now_link: Maintenant
-      original_post_link: Message original
-      unread_text: "{count} non lu|{count} non lus"
-      viewing_text: "{index} sur {count} message|{index} sur {count} messages"
+      now_link: Phản hồi mới nhất
+      original_post_link: Bài đăng chính
+      unread_text: "{count} chưa đọc"
+      viewing_text: "{index} của {count} bài viết|{index} của {count} bài viết"
 
     # These strings are displayed between posts in the post stream.
     post_stream:
-      discussion_renamed_text: "{username} a renommé le titre {old} par {new}."
+      discussion_renamed_text: "{username} đã đổi tiêu đề {old} thành {new}."
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
-      time_lapsed_text: "{period} plus tard"
+      time_lapsed_text: "{period} sau"
 
     # These strings are used by the search results dropdown list.
     search:
-      all_discussions_button: "Rechercher « {query} » dans toutes les discussions"
+      all_discussions_button: 'Tìm kiếm tất cả bài viết có từ khoá "{query}"'
       discussions_heading: => core.ref.discussions
-      users_heading: Utilisateurs
+      users_heading: Users
 
     # These strings are used in the Settings page.
     settings:
-      account_heading: Compte
+      account_heading: Tài khoản
       change_email_button: => core.ref.change_email
       change_password_button: => core.ref.change_password
       notifications_heading: => core.ref.notifications
-      notify_by_email_heading: Courriel
+      notify_by_email_heading: => core.ref.email
       notify_by_web_heading: Web
-      notify_discussion_renamed_label: Quelqu’un renomme une discussion que j’ai démarrée
-      privacy_disclose_online_label: Autoriser les autres à voir que je suis en ligne
-      privacy_heading: Confidentialité
+      notify_discussion_renamed_label: Khi ai đó đổi tên bài viết bạn đăng
+      privacy_disclose_online_label: Để mọi người biết khi tôi trực tuyến
+      privacy_heading: Quyền riêng tư
       title: => core.ref.settings
 
     # These strings are used in the Sign Up modal dialog.
@@ -293,30 +310,31 @@ core:
       confirmation_message: => core.ref.confirmation_email_sent
       email_placeholder: => core.ref.email
       dismiss_button: => core.ref.okay
-      log_in_text: "Déjà inscrit ? <a>Connexion</a>"
+      log_in_text: "Bạn đã có tài khoản? <a>Đăng nhập</a>"
       password_placeholder: => core.ref.password
       submit_button: => core.ref.sign_up
       title: => core.ref.sign_up
       username_placeholder: => core.ref.username
-      welcome_text: "Bienvenue {username} !"
+      welcome_text: "Xin chào, {username}!"
 
     # These strings are used in the user profile page and profile popup.
     user:
-      avatar_remove_button: Supprimer
-      avatar_upload_button: Transférer
-      bio_placeholder: Écrivez quelque chose sur vous
+      avatar_remove_button: Gỡ bỏ
+      avatar_upload_button: Tải lên
+      bio_placeholder: Giới thiệu về bản thân
       discussions_link: => core.ref.discussions
-      joined_date_text: "Inscrit {ago}"
-      online_text: En ligne
+      in_discussion_text: "Trong {discussion}"
+      joined_date_text: "Đã tham gia {ago}"
+      online_text: Trực tuyến
       posts_load_more_button: => core.ref.load_more
-      posts_link: Messages
+      posts_link: Bài đăng
       settings_link: => core.ref.settings
 
     # These strings are found on the user profile page (admin function).
     user_controls:
-      button: Commandes
+      button: Điều khiển
       delete_button: => core.ref.delete
-      delete_confirmation: "Êtes-vous sûr de vouloir supprimer cet utilisateur ? Tous ses messages seront également supprimés."
+      delete_confirmation: "Bạn có chắc bạn muốn xoá tài khoản này? Tất cả bài đăng của tài khoản này cũng sẽ bị xoá."
       edit_button: => core.ref.edit
 
   # Strings in this namespace are used by the forum and admin interfaces.
@@ -324,17 +342,18 @@ core:
 
     # These strings are displayed as tooltips for discussion badges.
     badge:
-      hidden_tooltip: Masquée
+      hidden_tooltip: Ẩn
 
-    # This string is displayed in place of the username of deleted user account.
-    deleted_user_text: "[supprimé]"
+    # These translations are used to modify usernames.
+    username:
+      deleted_text: "[deleted]"
 
     # These strings are displayed as error messages.
     error:
-      generic_message: "Oups ! Quelque chose s’est mal passé. Veuillez actualiser la page puis réessayer."
-      permission_denied_message: Vous n’avez pas la permission de faire cela.
-      not_found_message: La ressource que vous souhaitez atteindre est introuvable.
-      rate_limit_exceeded_message: Vous êtes un peu trop rapide. Veuillez réessayer dans quelques secondes.
+      generic_message: "Oops! Đã xảy ra lỗi. Hãy tải lại trang và thử lại."
+      permission_denied_message: Bạn không có quyền làm điều này.
+      not_found_message: Nguồn yêu cầu không tồn tại.
+      rate_limit_exceeded_message: Bạn đang thực hiện quá nhiều thao tác. Hãy thử lại sau.
 
     # These strings are used as suffixes when abbreviating numbers.
     number_suffix:
@@ -344,94 +363,92 @@ core:
     # These strings are used to punctuate a series of items.
     series:
       glue_text: ", "
-      two_text: "{first} et {second}"
-      three_text: "{first}, {second} et {third}"
+      two_text: "{first} và {second}"
+      three_text: "{first}, {second} và {third}"
 
   # Strings in this namespace are used in basic HTML interface.
   basic:
-    loading_text: Chargement…
-    load_error_message: Une erreur s’est produite lors de la tentative de chargement de la version complète de ce site.
-    javascript_disabled_message: Ce site est optimisé pour être consulté depuis un navigateur moderne dans lequel JavaScript est activé.
-    next_page_button: Page suivante
-    previous_page_button: Page précédente
+    loading_text: Đang tải...
+    load_error_message: Xảy ra lỗi trong quá trình tải trang.
+    javascript_disabled_message: Forum được hiển thị tốt nhất trên trình duyệt hiện đại và kích hoạt JavaScript.
+    next_page_button: Trang kế
+    previous_page_button: Trang trước
+
+  # Translations in this namespace are used in emails sent by the forum.
+  email:
+
+    # These translations are used in emails sent when users register new accounts.
+    activate_account:
+      body: |
+        Hey {username}!
+
+        Someone (hopefully you!) has signed up to {forum} with this email address.
+
+        If this was you, simply click the following link and your account will be activated:
+        {url}
+
+        If you did not sign up, please ignore this email.
+      subject: Activate Your New Account
+
+    # These translations are used in emails sent when users change their email address.
+    confirm_email:
+      body: |
+        Hey {username}!
+
+        Someone (hopefully you!) has changed their email address on {forum} to this one.
+
+        If this was you, simply click the following link and your email will be confirmed:
+        {url}
+
+        If this was not you, please ignore this email.
+      subject: Confirm Your New Email Address
+
+    # These translations are used in emails sent when users ask to reset their passwords.
+    reset_password:
+      body: |
+        Hey {username}!
+
+        Someone (hopefully you!) has submitted a forgotten password request for your account on {forum}.
+
+        If this was you, click the following link to reset your password:
+        {url}
+
+        If you do not wish to change your password, just ignore this email and nothing will happen.
+      subject: Reset Your Password
 
   ##
-  # REUSED STRINGS - These keys should not be used directly in code!
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
   ##
 
   # Strings in this namespace are referenced by two or more unique keys.
   ref:
-    all_discussions: Toutes les discussions
-    change_email: Modifier l’adresse de courriel
-    change_password: Modifier le mot de passe
-    confirmation_email_sent: "Nous avons envoyé un courriel de confirmation à {email}. Si vous ne le recevez pas prochainement, veuillez vérifier le contenu de votre dossier contenant les pourriels."
-    delete: Supprimer
-    delete_forever: Supprimer définitivement
-    discussions: Discussions
-    edit: Éditer
-    email: Adresse de courriel
-    load_more: Charger davantage
-    log_in: Connexion
-    log_out: Déconnexion
-    mark_all_as_read: Tout marquer comme lu
-    notifications: Notifications
-    okay: Valider                                # Referenced by flarum-flags.yml, flarum-tags.yml
-    password: Mot de passe
-    reply: Répondre                              # Referenced by flarum-mentions.yml
-    restore: Restaurer
-    settings: Réglages
-    sign_up: Inscription
-    start_a_discussion: Démarrer une discussion
-    some_others: "{count} autre|{count} autres"  # Referenced by flarum-likes.yml, flarum-mentions.yml
-    username: Nom d’utilisateur
-    write_a_reply: Rédigez une réponse…
-    you: Vous                                    # Referenced by flarum-likes.yml, flarum-mentions.yml
-
-  ##
-  # EMAIL CONTENT
-  ##
-
-  # Strings in this namespace are used in emails sent by the forum.
-  email:
-
-    # These strings are used in emails sent when users register new accounts.
-    activate_account:
-      subject: Activation de votre compte
-      body: |
-        Bonjour {username} !
-
-        Quelqu’un (en espérant que cela soit vous !) s’est inscrit sur {forum} avec cette adresse de courriel.
-
-        Si vous êtes bien à l’origine de cette action, cliquez sur le lien suivant pour que votre compte soit activé :
-        {url}
-
-        Si vous n’êtes pas à l’origine de cette action, veuillez ignorer ce courriel.
-
-    # These strings are used in emails sent when users change their email address.
-    confirm_email:
-      subject: Modification de votre adresse de courriel
-      body: |
-        Bonjour {username} !
-
-        Quelqu’un (en espérant que cela soit vous !) a demandé à modifier l’adresse de courriel associée à votre compte sur {forum} par celle-ci.
-
-        Si vous êtes bien à l’origine de cette action, cliquez sur le lien suivant pour confirmer votre nouvelle adresse de courriel :
-        {url}
-
-        Si vous ne souhaitez pas modifier votre adresse de courriel, veuillez ignorer ce courriel.
-
-    # These strings are used in emails sent when users ask to reset their passwords.
-    reset_password:
-      subject: Réinitialisation de votre mot de passe
-      body: |
-        Bonjour {username} !
-
-        Quelqu’un (en espérant que cela soit vous !) a demandé à réinitialiser le mot de passe associé à votre compte sur {forum}.
-
-        Si vous êtes bien à l’origine de cette action, cliquez sur le lien suivant pour réinitialiser votre mot de passe actuel :
-        {url}
-
-        Si vous ne souhaitez pas réinitialiser votre mot de passe, veuillez ignorer ce courriel.
+    all_discussions: Tất cả bài viết
+    change_email: Đổi Email
+    change_password: Đổi mật khẩu
+    confirm_password: Xác nhận mật khẩu
+    confirmation_email_sent: "Chúng tôi đã gửi Email xác nhận tới địa chỉ {email}. Nếu không thấy hãy thử kiểm tra mục thư rác."
+    delete: Xoá
+    delete_forever: Xoá vĩnh viễn
+    discussions: Bài viết
+    edit: Thay đổi
+    email: Email
+    load_more: Xem thêm
+    log_in: Đăng nhập
+    log_out: Đăng xuất
+    mark_all_as_read: Đánh dấu đã đọc tất cả
+    notifications: Thông báo
+    okay: OK                                     # Referenced by flarum-tags.yml
+    password: Mật khẩu
+    reply: Phản hồi                                 # Referenced by flarum-mentions.yml
+    restore: Phục hồi
+    save_changes: Lưu thay đổi                   # Referenced by flarum-tags.yml
+    settings: Thiết lập
+    sign_up: Đăng ký
+    some_others: "{count} other|{count} others"  # Referenced by flarum-likes.yml, flarum-mentions.yml
+    start_a_discussion: Viết bài mới
+    username: Tên đăng nhập
+    write_a_reply: Viết bình luận...
+    you: Bạn                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
 
   ##
   # GROUP NAMES
@@ -439,11 +456,11 @@ core:
 
   # Strings in this namespace are used to translate default group names.
   group:
-    admin: Administrateur
-    admins: Administrateurs
-    guest: Invité
-    guests: Invités
-    member: Membre
-    members: Membres
-    mod: Modérateur
-    mods: Modérateurs
+    admin: Quản trị viên
+    admins: Tất cả quản trị viên
+    guest: Thành viên ghé qua
+    guests: Tất cả thành viên ghé qua
+    member: Thành viên
+    members: Tất cả thành viên
+    mod: Cộng tác viên
+    mods: Tất cả cộng tác viên

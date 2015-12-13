@@ -1,7 +1,5 @@
-// Custom French Moment.js Locales
-// Based on: https://github.com/moment/moment/blob/develop/locale/vi.js
-
 moment.locale('vi', {
+
         months : 'tháng 1_tháng 2_tháng 3_tháng 4_tháng 5_tháng 6_tháng 7_tháng 8_tháng 9_tháng 10_tháng 11_tháng 12'.split('_'),
         monthsShort : 'Th01_Th02_Th03_Th04_Th05_Th06_Th07_Th08_Th09_Th10_Th11_Th12'.split('_'),
         weekdays : 'chủ nhật_thứ hai_thứ ba_thứ tư_thứ năm_thứ sáu_thứ bảy'.split('_'),
@@ -52,6 +50,24 @@ moment.locale('vi', {
         }
     });
 
-    return vi;
 
-}));
+    function plural(n) {
+        return (n % 10 < 5) && (n % 10 > 1) && ((~~(n / 10) % 10) !== 1);
+    }
+    function translate(number, withoutSuffix, key) {
+        var result = number + ' ';
+        switch (key) {
+        case 'm':
+            return withoutSuffix ? 'minuta' : 'minutę';
+        case 'mm':
+            return result + (plural(number) ? 'minuty' : 'minut');
+        case 'h':
+            return withoutSuffix  ? 'godzina'  : 'godzinę';
+        case 'hh':
+            return result + (plural(number) ? 'godziny' : 'godzin');
+        case 'MM':
+            return result + (plural(number) ? 'miesiące' : 'miesięcy');
+        case 'yy':
+            return result + (plural(number) ? 'lata' : 'lat');
+        }
+    }
